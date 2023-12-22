@@ -1,0 +1,23 @@
+.cool-button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #ff5f5f 0%, #f0e 50%, #ff5f5f 100%);
+  transition: 0.5s;
+  border-radius: 20px;
+  display: inline-block;
+
+  /* Animation */
+  animation: gradient-animation 4s linear infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

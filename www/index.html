@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora - AI Music Creation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script language="javascript" type="text/javascript" src="https://storage.googleapis.com/melody-mixer/musicvae.js"></script>
+    <script language="javascript" type="text/javascript" src="./libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="./libraries/tone.js"></script>
+    <script language="javascript" type="text/javascript" src="./preset-melodies.js"></script>
+    <script language="javascript" type="text/javascript" src="https://storage.googleapis.com/melody-mixer/StartAudioContext.js"></script>
+
+    <!--
+    Set App Icons
+    <link href="/data/images/???.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/data/images/???.png" rel="apple-touch-icon">
+    -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/0.12.64/Tone.min.js"></script>
+    <script src="https://storage.googleapis.com/melody-mixer/musicvae.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@magenta/music@^1.0.0"></script>
+    <script src="./index.js"></script>
+    -->
+</head>
+<body>
+    <section id="demo">
+        <h2 >Demo</h2>
+        <button class="splash-play-button" id="splash-play-button" onclick="onPlay();" disabled>LOADING...</button>
+        <div class="control-container">
+          <div class="drop-down-container">
+          <select name="melody-one" class="drop-down">
+            <option>Melody 1</option>
+          </select>
+          <label for="melody-one">Melody 1</label>
+        </div>
+        <button class="play-pause-button"></button>
+        <div class="drop-down-container">
+          <select name="melody-two" class="drop-down">
+            <option>Melody 2</option>
+          </select>
+          <label for="melody-two">Melody 2</label>
+        </div>
+      </div>
+      <script language="javascript" type="text/javascript" src="aurora.js"></script>
+    </section>
+
+    <footer>
+        <p>© 2023 Aurora Music. All rights reserved.</p>
+        <!-- Add footer links or information here -->
+    </footer>
+</body>
+</html>

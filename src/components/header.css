@@ -1,0 +1,5 @@
+/* Header.css */
+header img {
+  width: 20%; /* Sets the image width to 50% of its original size */
+  height: auto; /* Maintains the aspect ratio of the image */
+}

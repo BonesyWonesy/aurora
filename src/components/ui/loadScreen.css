@@ -1,0 +1,45 @@
+.load-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.noteContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+
+.note {
+  animation: wave 2s ease-in-out infinite, colorFade 6s ease-in-out infinite;
+  /* Adjust the width and height as needed */
+  width: 50px;
+  height: 50px;
+  opacity: 0.7; /* Starting opacity */
+}
+
+/* Add your existing wave and colorFade keyframes here */
+
+.note-svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-20px); }
+  75% { transform: translateY(20px); }
+}
+
+@keyframes colorFade {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; fill: #ff5f5f; }
+  60% { fill: #5fafff; }
+  70% { fill: #5fffaf; }
+  80% { fill: #afff5f; }
+  90% { fill: #ffaf5f; }
+}

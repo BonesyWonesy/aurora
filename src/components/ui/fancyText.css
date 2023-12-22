@@ -1,0 +1,67 @@
+/* Header.css */
+.fancy-text {
+  /* Create a gradient background for the text */
+  background: linear-gradient(
+    to bottom,
+    rgb(93, 239, 235) 0%,
+    rgb(27, 55, 150) 100%
+  );
+  background-size: 100% 200%;
+
+
+  /* Make the background clip to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Use transparent text color to allow the gradient to show through */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; /* Fallback: you might need to use 'currentColor' */
+
+  /* Add other styling as needed */
+  font-size: 2em; /* Example size, adjust as needed */
+  font-weight: bold;
+  text-align: center;
+  /* Animation */
+  transition: 0.5s;
+  animation: gradient-animation 4s linear infinite alternate;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.fancy-text2 {
+  /* Apply basic text styles */
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+  /* Create a gradient background */
+  background: linear-gradient(
+    to bottom,
+    rgb(93, 239, 235) 0%,
+    rgb(27, 55, 150) 100%
+  );
+
+  /* Create an infinite animation */
+  background-size: 100% 200%; /* Double the vertical size for the animation */
+  animation: slide 3s ease-in-out infinite alternate;
+
+  /* Clip the background to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Make the text color transparent to show the background */
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; /* Fallback: you might need to use 'currentColor' */
+}
+
+@keyframes slide {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}
